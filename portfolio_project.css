@@ -1,0 +1,105 @@
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(0,0,33);
+  color: white;
+  /* flex-shrink:1; */
+}
+
+h1{
+  margin-right: 490px;
+  /* flex-shrink:1; */
+}
+
+header {
+  background-color: rgb(121, 137, 135);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  height: 40px;
+  /* flex-shrink:1; */
+}
+
+nav {
+  margin-top: 30px;
+  /* flex-shrink:1; */
+}
+
+nav ul {
+  list-style: none;
+  /* flex-shrink:1; */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 45px;
+  /* flex-shrink:1; */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  /* flex-shrink:1; */
+}
+
+nav a:hover {
+  color:rgb(159, 159, 225)
+}
+
+.project{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0px solid #ddd; /* Add a border for separation */
+    width: 60%;
+}
+
+main{
+  height: 900px;
+}
+
+footer {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Styles for Samsung M20 or devices with similar width */
+
+  body {
+    font-size: 10px;
+  }
+
+  h1 {
+    margin-right: 10%; /* Adjust as needed for smaller screens */
+    font-size: 17px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-right: 5%; /* Adjust as needed for smaller screens */
+  }
+
+  nav ul{
+    margin-left: -30%;
+  }
+
+  main{
+    height: 700px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}

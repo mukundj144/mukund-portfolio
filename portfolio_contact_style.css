@@ -1,0 +1,147 @@
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(0,0,33);
+  color: white;
+  /* flex-shrink:1; */
+}
+
+h1{
+  margin-right: 490px;
+  /* flex-shrink:1; */
+}
+
+header {
+  background-color: rgb(121, 137, 135);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  height: 40px;
+  /* flex-shrink:1; */
+}
+
+nav {
+  margin-top: 30px;
+  /* flex-shrink:1; */
+}
+
+nav ul {
+  list-style: none;
+  /* flex-shrink:1; */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 45px;
+  /* flex-shrink:1; */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  /* flex-shrink:1; */
+}
+
+nav a:hover {
+  color:rgb(159, 159, 225)
+}
+
+#contact {
+  margin-top: 140px;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 608px;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-shrink:1; */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  /* flex-shrink:1; */
+}
+
+div {
+  border: 3px solid;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 107px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  /* transition: all 2s linear; */
+  /* flex-shrink:1; */
+}
+
+div:hover {
+  color: rgb(60, 238, 120);
+  background-color: #7d66fe;
+  /* transform: translateX(50px); */
+  /* flex-shrink:1; */
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  /* margin-top: 50px;  */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+
+  h1 {
+    margin-right: 10%; /* Adjust as needed for smaller screens */
+    font-size: 17px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-right: 5%; /* Adjust as needed for smaller screens */
+  }
+
+  nav ul{
+    margin-left: -30%;
+  }
+
+  main{
+    height: 700px;
+  }
+
+  #contact {
+    width: 90%; /* Adjusted width for smaller screens */
+    margin: 10px auto; /* Center the container */
+  }
+
+  div {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: none;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
