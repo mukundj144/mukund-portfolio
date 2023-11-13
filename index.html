@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio_style .css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Mukund's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/portfolio_website/mukund's_portfolio.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/portfolio_website/portfolio_about.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/portfolio_website/portfolio_project.html">Projects</a></li>
+        <li><a href="http://127.0.0.1:5500/portfolio_website/portfolio_contact.html">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+  <section class="content">
+      <div class="cont-first">
+        <div class="intro">
+          My name is <span>Mukund</span>
+          <div>and I am a </div>
+          <span id="element"></span>
+          <div class="button">
+            <a href="http://127.0.0.1:5500/portfolio_website/portfolio_resume.html" class="btn" target="_blank">Download resume</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="cont-second">
+        <div class="image"></div>
+      </div>
+    </section>
+    
+
+  <section class="separator" > </section>
+  
+  <!-- <section class="content2">
+    <div class="experience">
+    Work Experience
+  </div>
+  <div class="separator2" >
+    <div class="vertical">
+      <div class="vertical-title">JOB1</div>
+      <div class="vertical-desc">Description related to job</div>
+    </div>
+    <div class="vertical">
+      <div class="vertical-title">JOB2</div>
+      <div class="vertical-desc">Description related to job  </div>
+    </div>
+    <div class="vertical">
+      <div class="vertical-title">JOB3</div>
+      <div class="vertical-desc">Description related to job</div>
+    </div>
+  </div> -->
+  <div class="separator3"></div>
+  <div class="social_media">
+    <a href="https://www.instagram.com/mukund144official/" class="insta" ></a>
+      <a href="https://www.linkedin.com/in/mukund-joshi-a70077225/" class="linkdin"></a>
+  </div>
+      
+  </div>
+  </section>
+
+
+ </main>
+
+ <footer>
+  <p>&copy; 2023 Mukund's Portfolio. All rights reserved.</p>
+ </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  
+  <script>
+    function startTyping() {
+      var typed = new Typed('#element', {
+        strings: ['CSE student', 'software developer', 'Data Analyst', 'Data Scientist'],
+        typeSpeed: 50,
+        onComplete: function () {
+          setTimeout(function () {
+            // Clear the existing Typed instance
+            typed.destroy();
+  
+            // Start typing again
+            startTyping();
+          }, 2000); // 2-second pause
+        },
+      });
+    }
+  
+    // Initial start
+    startTyping();
+  </script>
+</body>
+</html>
